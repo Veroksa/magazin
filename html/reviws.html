@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+      name="discription"
+      content="Магазин одежды moon dark. Строгий, минималистичный, удобный."
+    />
+    <meta name="keywords" content="Одежда, moon dark, магазин" />
+    <meta name="creator" content="Tolmach Vladimir" />
+    <meta name="robots" content="index, folow" />
+    <meta property="og:image" content="../img/icon.png" />
+    <meta property="og:url" content="http://192.168.1.7:5500/index.html" />
+    <meta property="og:title" content="О moon dark" />
+    <meta
+      property="og:discription"
+      content="Магазин одежды moon dark. Строгий, минималистичный, удобный."
+    />
+    <!-- SHEET -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- NAMING -->
+    <title>moon dark | Отзывы</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#000000" />
+    <!-- HEADER -->
+    <link rel="stylesheet" href="../css/header.css" />
+    <!-- FOOTER -->
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+
+<title>Отзывы покупателей</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #black;
+}
+
+.reviews {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.rating {
+    margin-bottom: 10px;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 25px;
+    color: #777;
+}
+
+.rating label:hover,
+.rating input:checked ~ label {
+    color: #f90;
+}
+
+.review {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#thank-you-message {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9f5f5;
+    border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<div class="reviews">
+    <h2>Оставьте ваш отзыв</h2>
+    <div>
+        <form id="review-form">
+            <div class="rating">
+                <input type="radio" id="star5" name="star" value="5">
+                <label for="star5">⭐️</label>
+                <input type="radio" id="star4" name="star" value="4">
+                <label for="star4">⭐️</label>
+                <input type="radio" id="star3" name="star" value="3">
+                <label for="star3">⭐️</label>
+                <input type="radio" id="star2" name="star" value="2">
+                <label for="star2">⭐️</label>
+                <input type="radio" id="star1" name="star" value="1">
+                <label for="star1">⭐️</label>
+            </div>
+            <textarea id="user-comment" placeholder="Напишите свой отзыв здесь"></textarea>
+            <button type="button" id="submit-review" onclick="submitReview()">Отправить</button>
+        </form>
+    </div>
+    
+    <div id="thank-you-message" style="display: none;">
+        Спасибо за ваш отзыв!
+    </div>
+    
+    <div class="other-reviews">
+        <h3>Другие отзывы</h3>
+        <div class="review">
+            <p><strong>Павел:</strong> Хороший магазин, качество на высоте!</p>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️</div>
+        </div>
+        <div class="review">
+            <p><strong>Марина:</strong> Все понравилось, рекомендую!</p>
+            <div class="rating">⭐️⭐️⭐️⭐️</div>
+        </div>
+    </div>
+</div>
+ <footer>
+        <div class="footer-logo">
+          <a class="logo" href="../index.html">
+            <img
+              class="footer_logo_img"
+              src="../img/icon.png"
+              alt="black hole"
+              style="width: 64px"
+          /></a>
+          <h2>moon dark</h2>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../html/catalog.html">Каталог</a></li>
+            <li><a href="../html/about.html">О нас</a></li>
+            <li><a href="../html/size_clothes.html">Подбор размера</a></li>
+            <li><a href="../html/reviws.html">Отзывы</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Социальные сети</h3>
+          <ul>
+            <li>
+              <a href="https://www.youtube.com"
+                ><img
+                  class="social-logo-yt"
+                  src="../img/icon-social/youtube.png"
+                  alt="yt"
+              /></a>
+            </li>
+            <li>
+              <a href="https://telegram.org"
+                ><img
+                  class="social-logo-tg"
+                  src="../img/icon-social/telegram.svg"
+                  alt="tg"
+              /></a>
+            </li>
+            <li>
+              <a href="https://vk.com"
+                ><img
+                  class="social-logo-vk"
+                  src="../img/icon-social/vk.png"
+                  alt="yt"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+<script>
+function submitReview() {
+    var rating = document.querySelector('input[name="star"]:checked').value;
+    var comment = document.getElementById('user-comment').value;
+    
+    if (rating && comment) {
+        // Отправка отзыва на сервер или другие действия
+        document.getElementById('thank-you-message').style.display = 'block';
+        
+        // Сброс значений полей формы
+        document.querySelector('input[name="star"]:checked').checked = false;
+        document.getElementById('user-comment').value = '';
+    } else {
+        alert('Пожалуйста, поставьте оценку и напишите отзыв');
+    }
+}
+</script>
+
+</body>
+</html>
